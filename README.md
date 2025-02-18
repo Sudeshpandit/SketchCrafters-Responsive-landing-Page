@@ -1,1 +1,0 @@
-# SketchCrafters-Responsive-landing-Page
