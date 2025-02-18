@@ -1,0 +1,107 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+section {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 15px 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #2af5f5;
+}
+
+/* Hero Section */
+#home {
+  background: linear-gradient(45deg, #77dae1, #66e6ff);
+  color: #fff;
+}
+
+/* Gallery Section */
+.gallery, .crafts, .products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item, .craft-item, .product {
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.item:hover, .craft-item:hover, .product:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc5200;
+}
+
+#wishlist {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      padding: 10px;
+  }
+  .gallery, .crafts, .products {
+      flex-direction: column;
+  }
+}
+
+
